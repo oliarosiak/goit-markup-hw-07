@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!--Page header-->
+    <header class="header">
+        <div class="container header-container">
+            <!--Main navigation-->
+            <nav class="nav">
+                <!--Logo is link-->
+                <a class="header-logo link" href="./index.html">Web<span class="header-logo span">Studio</span></a>
+    
+                <!--Navigation to other pages-->
+                <ul class="nav-list">
+                    <li class="nav-item list"><a class="nav-link link" href="./index.html">Студия</a></li>
+                    <li class="nav-item list"><a class="nav-link link current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav-item list"><a class="nav-link link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+    
+            <!--Contacts information-->
+            <ul class="contacts">
+                <li class="contacts-item list">
+                    <a class="contacts-link link" href="mailto:info@devstudio.com">
+                        <svg class="icon-mail" width="16" height="12">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                </li>
+                <li class="contacts-item list">
+                    <a class="contacts-link link" href="tel:+380961111111">
+                        <svg class="icon-tel" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main portfolio content -->
+    <main>
+        <section class="portfolio section">
+            <div class="container">
+                <!-- Hidden title -->
+                <h1 class="visually-hidden">Портфолио. Примеры наших работ</h1>
+                
+                <!-- Portfolio Full list of examples -->
+                <ul class="filter">
+                    <li class="filter-item list"><button class="filter-btn" type="button">Все</button></li>
+                    <li class="filter-item list"><button class="filter-btn" type="button">Веб-сайты</button></li>
+                    <li class="filter-item list"><button class="filter-btn" type="button">Приложения</button></li>
+                    <li class="filter-item list"><button class="filter-btn" type="button">Дизайн</button></li>
+                    <li class="filter-item list"><button class="filter-btn" type="button">Маркетинг</button></li>
+                </ul>
+                
+                <!-- Portfolio visualization -->
+                <ul class="portfolio-list">
+                    <li class="portfolio-item list">
+                        <a class="portfolio-link link" href="">
+                            <div class="portfolio-overlay">
+                                <img src="./images/portfolio-project1.jpg" alt="Главная страница сайта Технокряк" width="370" height="294">
+                                <div class="overlay-top overlay">
+                                    <p class="overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
+                                        платформу для цифрового
+                                        шпионажа и атак на защищённые сервера конкурентов.</p>
+                                </div>
+                            </div>
+                            <div class="portfolion-block">
+                                <h2 class="portfolio-title">Технокряк</h2>
+                                <p class="portfolio-text">Веб-сайт</p>
+                            </div>                                            
+                        </a>
+                    </li>
+                    <li class="portfolio-item list">
+                        <a class="portfolio-link link" href="">
+                            <div class="portfolio-overlay">
+                                <img src="./images/portfolio-project2.jpg" alt="Два баскетболиста. Один в фиолетовой форме, другой в белой" width="370"
+                                    height="294">
+                                <div class="overlay-top overlay">
+                                    <p class="overlay-text">Оформление постера к баскетбольной игре команды New Orlean против Golden Star. Матч состоялся в феврале 2021 года.</p>
+                                </div>
+                            </div>                            
+                            <div class="portfolion-block">
+                                <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
+                                <p class="portfolio-text">Дизайн</p>
+                            </div>                                
+                        </a>
+                    </li>
+                    <li class="portfolio-item list">
+                        <a class="portfolio-link link" href="">
+                            <div class="portfolio-overlay">
+                                <img src="./images/portfolio-project3.jpg" alt="Логотип ресторана Seafood, с фоном в виде рыбы" width="370"
+                                    height="294">
+                                <div class="overlay-top overlay">
+                                    <p class="overlay-text">Ресторан Seafood может предложить посетителям отборочные деликатесы морской кухни: красную рыбу, кальмаров, мидии и много
+                                    других блюд, проготовлених по старинным рецептам.</p>
+                                </div>
+                            </div>                            
+                            <div class="portfolion-block">
+                                <h2 class="portfolio-title">Ресторан Seafood</h2>
+                                <p class="portfolio-text">Приложение</p>
+                            </div>                                
+                        </a>
+                    </li>
+                    <li class="portfolio-item list">
+                        <a class="portfolio-link link" href="">
+                            <div class="portfolio-overlay">
+                                <img src="./images/portfolio-project4.jpg" alt="Черные полноразмерные беспроводные наушники без микрофона" width="370"
+                                    height="294">
+                                <div class="overlay-middle overlay">
+                                    <p class="overlay-text">Проект Prime - новый стартап молодой киевской команды энтузиастов, основанный в 2020 году. Предлагает своим клиентам
+                                    новаторские маркетинговые решения.</p>
+                                </div>
+                            </div>                            
+                            <div class="portfolion-block">
+                                <h2 class="portfolio-title">Проект Prime</h2>
+                                <p class="portfolio-text">Маркетинг</p>
+                            </div>                                
+                        </a>
+                    </li>
+                    <li class="portfolio-item list">
+                        <a class="portfolio-link link" href="">
+                            <div class="portfolio-overlay">
+                                <img src="./images/portfolio-project5.jpg" alt="Две коробки с надписями. Белая и коричневая" width="370" height="294">
+                                <div class="overlay-middle overlay">
+                                    <p class="overlay-text">Проект Boxes - это современный эко-приложение. Клиенты - это предприниматели, которые заботятся об окружающей среде и
+                                    упаковывают свои товары в экологические картонные коробки.</p>
+                                </div>
+                            </div>                            
+                            <div class="portfolion-block">
+                                <h2 class="portfolio-title">Проект Boxes</h2>
+                                <p class="portfolio-text">Приложение</p>
+                            </div>                                
+                        </a>
+                    </li>
+                    <li class="portfolio-item list">
+                        <a class="portfolio-link link" href="">
+                            <div class="portfolio-overlay">
+                                <img src="./images/portfolio-project6.jpg" alt="Страница сайта в черном стиле на экране компьютера" width="370"
+                                    height="294">
+                                <div class="overlay-middle overlay">
+                                    <p class="overlay-text">Inspiration has no Borders - международный сайт, который доказывает, что вдохновение не имеет границ. Здесь можно как
+                                    найти, так и поделиться творческими идеями в любом направлении.</p>
+                                </div>
+                            </div>                            
+                            <div class="portfolion-block">
+                                <h2 class="portfolio-title">Inspiration has no Borders</h2>
+                                <p class="portfolio-text">Веб-сайт</p>
+                            </div>                                
+                        </a>
+                    </li>
+                    <li class="portfolio-item list">
+                        <a class="portfolio-link link" href="">
+                            <div class="portfolio-overlay">
+                                <img src="./images/portfolio-project7.jpg" alt="Разворот издания Limited Edition" width="370" height="294">
+                                <div class="overlay-bottom overlay">
+                                    <p class="overlay-text">Дизайн разворота издания Limited Edition, выпуск №5 за май 2021г. Глянец позиционирует себя как издание, которое информирует читателей о
+                                    современных тенденциях в мире моды, развития технологий и мира шоу-бизнеса.</p>
+                                </div>
+                            </div>                            
+                            <div class="portfolion-block">
+                                <h2 class="portfolio-title">Издание Limited Edition</h2>
+                                <p class="portfolio-text">Дизайн</p>
+                            </div>                            
+                        </a>
+                    </li>
+                    <li class="portfolio-item list">
+                        <a class="portfolio-link link" href="">
+                            <div class="portfolio-overlay">
+                                <img src="./images/portfolio-project8.jpg" alt="Белая бирка с джутовым шнуром и надписью черными буквами" width="370"
+                                    height="294">
+                                <div class="overlay-bottom overlay">
+                                    <p class="overlay-text">Проект LAB - это агентство, которое занимает ТОП-1 в Украине, в сфере Digital маркетинга. Команда создает креативные и оригинальные решения
+                                    для своих клиентов.</p>
+                                </div>
+                            </div>                            
+                            <div class="portfolion-block">
+                                <h2 class="portfolio-title">Проект LAB</h2>
+                                <p class="portfolio-text">Маркетинг</p>
+                            </div>                                
+                        </a>
+                    </li>
+                    <li class="portfolio-item list">
+                        <a class="portfolio-link link" href="">
+                            <div class="portfolio-overlay">
+                                <img src="./images/portfolio-project9.jpg" alt="Главная страница приложения Growing Business на экране ноутбука"
+                                    width="370" height="294">
+                                <div class="overlay-bottom overlay">
+                                    <p class="overlay-text">Growing Business - приложение для владельцев среднего и малого бизнеса, в котором собраны все необходимые иструменты для
+                                    анализа, продвижения и развития дела.</p>
+                                </div>
+                            </div>                            
+                            <div class="portfolion-block">
+                                <h2 class="portfolio-title">Growing Business</h2>
+                                <p class="portfolio-text">Приложение</p>
+                            </div>                                
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!--Page footer-->
+    <footer class="footer">
+        <div class="container footer-section">
+            <div class="footer-address">
+                <!--Logo is link-->
+                <a class="footer-logo link" href="./index.html">Web<span class="footer-logo span">Studio</span></a>
+                <!--Address-->
+                <address>
+                    <ul class="address-list">
+                        <li class="address-item list"><a class="address-text link"
+                                href="https://goo.gl/maps/6zCrVfu8QyN4T2Zt5">г. Киев,
+                                пр-т Леси Украинки, 26</a></li>
+                        <li class="address-item list"><a class="address-link link"
+                                href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="address-item list"><a class="address-link link" href="tel:+380991111111">+38 099 111 11
+                                11</a></li>
+                    </ul>
+                </address>
+            </div>
+
+            <!-- Footer social links -->
+            <div class="footer-social">
+                <h2 class="social-title">присоединяйтесь</h2>
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a class="social-link" href="">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Footer email subscribe -->
+            <div class="footer-mail-subscribe">
+                <h3 class="mail-subcribe-title">Подпишитесь на рассылку</h3>
+                <form class="mail-subcribe-form">
+                    <label for="mail-subscribe"></label>
+                    <input class="mail-subcribe-field" type="email" name="user-mail-subscribe" id="mail-subscribe"
+                        placeholder="E-mail">
+                    <button class="mail-subscribe-btn" type="submit">
+                        <span class="mail-subscribe-text">Подписаться</span>
+                        <svg class="mail-subscribe-icon">
+                            <use href="./images/icons.svg#icon-send-air"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+    
+        </div>
+    </footer>
+    
+</body>
+</html>
