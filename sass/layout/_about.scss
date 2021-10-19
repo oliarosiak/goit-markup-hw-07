@@ -1,0 +1,33 @@
+.about-list {
+  display: flex;
+}
+
+.about-item {
+  flex-basis: calc((100% - 120px) / 4);
+}
+
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-icon {
+  width: 270px;
+  height: 120px;
+  background-color: var(--secong-background-color);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-title {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--second-text-color);
+  margin-bottom: 10px;
+}
+
+.about-text {
+  line-height: 1.71;
+}
