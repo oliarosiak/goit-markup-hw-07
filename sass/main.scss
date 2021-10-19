@@ -3,4 +3,28 @@
 @import "./utils/hidden";
 @import "./base/reset";
 @import "./base/common";
-//
+@import "./components/container";
+// ----------------- MAIN PAGE --------------
+// Header
+@import "./layout/header";
+// Hero section
+@import "./layout/hero";
+// About section
+@import "./layout/about";
+// Work section
+@import "./layout/work";
+// Team section
+@import "./layout/team";
+// Clients section
+@import "./layout/clients";
+//  Footer + Socials + Subscribe
+@import "./layout/footer";
+@import "./layout/footer-socials";
+@import "./layout/footer-email";
+// Modal window + Modal form
+@import "./components/modal";
+// ------------ PORTFOLIO PAGE -------------
+// Portfolio filter
+@import "./layout/portfolio-filter";
+// Portfolio list
+@import "./layout/portfolio-list";
