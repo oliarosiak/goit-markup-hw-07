@@ -66,9 +66,9 @@
         <!--Hero block with button-->
         <section class="hero">
             <div class="container">
-                <h1 class="hero-title">Эффективные решения <br />
+                <h1 class="hero__title">Эффективные решения <br />
                     для вашего бизнеса</h1>
-                <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>                
+                <button class="btn" type="button" data-modal-open><span class="btn__text">Заказать услугу</span></button>                
             </div>           
         </section>
                 
@@ -369,25 +369,29 @@
 
     <!--Page footer-->
     <footer class="footer">
-        <div class="container footer-section">
-            <div class="footer-address">
+        <div class="container footer__container">
+            <div class="footer__address">
                 <!--Logo is link-->
                 <a class="logo footer-logo link" href="./index.html">Web<span class="footer-logo__span">Studio</span></a>
                 <!--Address-->
                 <address>
                     <ul class="address-list">
-                        <li class="address-item list"><a class="address-text link" href="https://goo.gl/maps/6zCrVfu8QyN4T2Zt5">г. Киев,
+                        <li class="address-list__item list">
+                            <a class="address-list__text link" href="https://goo.gl/maps/6zCrVfu8QyN4T2Zt5">г. Киев,
                                 пр-т Леси Украинки, 26</a></li>
-                        <li class="address-item list"><a class="address-link link" href="mailto:info@example.com">info@example.com</a>
+                        <li class="address-list__item list">
+                            <a class="address-list__link link" href="mailto:info@example.com">info@example.com</a>
                         </li>
-                        <li class="address-item list"><a class="address-link link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                        <li class="address-list__item list">
+                            <a class="address-list__link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        </li>
                     </ul>
                 </address>
             </div>
 
             <!-- Footer social links -->
-            <div class="footer-social">
-                <h2 class="social-title">присоединяйтесь</h2>
+            <div class="footer__social">
+                <h2 class="footer__title">присоединяйтесь</h2>
                 <ul class="social-list">
                     <li class="social-list__item">
                         <a class="social-list__link social-list__link_bcg_grey" href="">
@@ -421,14 +425,14 @@
             </div>
 
             <!-- Footer email subscribe -->
-            <div class="footer-mail-subscribe">
-                <h3 class="mail-subcribe-title">Подпишитесь на рассылку</h3>
-                <form class="mail-subcribe-form">
+            <div>
+                <h3 class="footer__title">Подпишитесь на рассылку</h3>
+                <form class="subscribe-form">
                     <label for="mail-subscribe"></label>
-                    <input class="mail-subcribe-field" type="email" name="user-mail-subscribe" id="mail-subscribe" placeholder="E-mail">
-                    <button class="mail-subscribe-btn" type="submit">
-                        <span class="mail-subscribe-text">Подписаться</span>
-                        <svg class="mail-subscribe-icon">
+                    <input class="subscribe-form__field" type="email" name="user-mail-subscribe" id="mail-subscribe" placeholder="E-mail">
+                    <button class="btn btn_margin_left" type="submit">
+                        <span class="btn__text btn__text_margin_right">Подписаться</span>
+                        <svg class="btn__icon">
                             <use href="./images/icons.svg#icon-send-air"></use>
                         </svg>
                     </button>
@@ -443,58 +447,59 @@
     <div class="backdrop is-hidden" data-modal>
         <!-- Modal window -->
         <div class="modal">
-            <button class="modal-close-btn" type="button" data-modal-close>
+            <button class="modal__close-btn" type="button" data-modal-close>
                 <svg width="18" height="18">
                     <use href="./images/icons.svg#icon-close-black-18dp"></use>
                 </svg>
             </button>      
             
             <!-- Modal form -->
-            <form class="modal-form-request">
-                <h2 class="request-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <form class="request-form">
+                <h2 class="request-form__title">Оставьте свои данные, мы вам перезвоним</h2>
 
-                <div class="request-block">
-                    <label class="request-label" for="clients-name">Имя</label>
-                    <input class="request-field" type="text" name="client-name" id="clients-name">
-                    <svg class="request-icon">
+                <div class="request-form__block">
+                    <label class="request-form__label" for="clients-name">Имя</label>
+                    <input class="request-form__field" type="text" name="client-name" id="clients-name">
+                    <svg class="request-form__icon">
                         <use href="./images/icons.svg#icon-person-black"></use>
                     </svg>
                 </div>
 
-                <div class="request-block">
-                    <label class="request-label" for="clients-phone">Телефон</label>
-                    <input class="request-field" type="tel" name="client-phone-number" id="clients-phone">
-                    <svg class="request-icon">
+                <div class="request-form__block">
+                    <label class="request-form__label" for="clients-phone">Телефон</label>
+                    <input class="request-form__field" type="tel" name="client-phone-number" id="clients-phone">
+                    <svg class="request-form__icon">
                         <use href="./images/icons.svg#icon-phone-black"></use>
                     </svg>
                 </div>
 
-                <div class="request-block">
-                    <label class="request-label" for="clients-mail">Почта</label>
-                    <input class="request-field" type="email" name="client-email" id="clients-mail">
-                    <svg class="request-icon">
+                <div class="request-form__block">
+                    <label class="request-form__label" for="clients-mail">Почта</label>
+                    <input class="request-form__field" type="email" name="client-email" id="clients-mail">
+                    <svg class="request-form__icon">
                         <use href="./images/icons.svg#icon-email-black"></use>
                     </svg>
                 </div>
 
-                <div class="request-block comment">
-                    <label class="request-label" for="clients-comment">Комментарий</label>
-                    <textarea class="request-comment" name="client-comment" id="clients-comment" placeholder="Введите текст"
+                <div class="request-form__block comment">
+                    <label class="request-form__label" for="clients-comment">Комментарий</label>
+                    <textarea class="request-form__comment" name="client-comment" id="clients-comment" placeholder="Введите текст"
                         rows="7"></textarea>
                 </div>
 
-                <div class="agreement-block">
-                    <label class="agreement-label" for="agreement-ok">
-                        <input class="checkbox" type="checkbox" name="agreement-checkbox" id="agreement-ok" required />
-                        <svg class="agreement-icon">
+                <div class="request-form__agreement">
+                    <label class="request-form__agreement-label" for="agreement-ok">
+                        <input class="request-form__agreement-checkbox" type="checkbox" name="agreement-checkbox" id="agreement-ok" required />
+                        <svg class="request-form__agreement-icon">
                             <use href="./images/icons.svg#icon-check"></use>
                         </svg>
-                        Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="">Условия договора</a>
+                        Соглашаюсь с рассылкой и принимаю <a class="request-form__agreement-link" href="">Условия договора</a>
                     </label>
                 </div>
-                
-                <button class="request-form-btn" type="submit">Отправить</button>
 
+                <button class="btn" type="submit">
+                    <span class="btn__text">Отправить</span>
+                </button>
             </form>
         </div>
     </div>
