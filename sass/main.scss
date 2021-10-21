@@ -5,7 +5,11 @@
 @import "./base/common";
 @import "./components/container";
 @import "./components/section-title";
-@import "./components/socials";
+@import "./components/social-list";
+@import "./components/form-subscribe";
+@import "./components/address-list";
+@import "./components/btn";
+
 // ----------------- MAIN PAGE --------------
 // Header
 @import "./layout/header";
@@ -27,10 +31,10 @@
 @import "./layout/clients";
 //  Footer + Socials + Subscribe
 @import "./layout/footer";
-@import "./layout/footer-socials";
-@import "./layout/footer-email";
 // Modal window + Modal form
+@import "./components/backdrop";
 @import "./components/modal";
+@import "./components/form-request";
 // ------------ PORTFOLIO PAGE -------------
 // Portfolio filter
 @import "./layout/portfolio-filter";
