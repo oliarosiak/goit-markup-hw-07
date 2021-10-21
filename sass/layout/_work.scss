@@ -1,4 +1,4 @@
-.work {
+.section_padding_work {
   padding-top: 0;
 }
 
@@ -6,15 +6,15 @@
   display: flex;
 }
 
-.work-item:not(:last-child) {
+.work-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.work-thumb {
+.work-list__thumb {
   position: relative;
 }
 
-.work-label {
+.work-list__label {
   position: absolute;
   width: 100%;
   height: 70px;
