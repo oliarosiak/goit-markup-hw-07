@@ -1,20 +1,22 @@
 // Настройки
 @import "./utils/variables";
+@import "./utils/mixins";
 @import "./utils/hidden";
 @import "./base/reset";
 @import "./base/common";
 @import "./components/container";
+@import "./components/logo";
 @import "./components/section-title";
 @import "./components/social-list";
 @import "./components/form-subscribe";
 @import "./components/address-list";
 @import "./components/btn";
-
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/form-request";
 // ----------------- MAIN PAGE --------------
 // Header
 @import "./layout/header";
-// Logo styles
-@import "./components/logo";
 // Navigation styles
 @import "./layout/header-nav";
 // Contacts styles
@@ -29,12 +31,8 @@
 @import "./layout/team";
 // Clients section
 @import "./layout/clients";
-//  Footer + Socials + Subscribe
+//  Footer section
 @import "./layout/footer";
-// Modal window + Modal form
-@import "./components/backdrop";
-@import "./components/modal";
-@import "./components/form-request";
 // ------------ PORTFOLIO PAGE -------------
 // Portfolio filter
 @import "./layout/portfolio-filter";
