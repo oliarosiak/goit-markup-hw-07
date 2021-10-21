@@ -103,10 +103,7 @@
 }
 
 .request-form__agreement-label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  @include centeredflex();
   line-height: 1.87;
   color: var(--main-text-color);
 }

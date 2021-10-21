@@ -1,7 +1,6 @@
 .address-list__item {
   font-style: normal;
-  font-weight: 400;
-  line-height: 1.71;
+  @include font(400, 14px, 1.71);
   &:not(:last-child) {
     margin-bottom: 9px;
   }

@@ -14,9 +14,7 @@
   height: 120px;
   background-color: var(--secong-background-color);
   margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredflex();
 }
 
 .about-list__icon {

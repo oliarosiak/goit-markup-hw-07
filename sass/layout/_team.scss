@@ -22,9 +22,7 @@
 }
 
 .team-list__subtitle {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(500, 16px, 1.19);
   text-align: center;
   color: var(--second-text-color);
   margin-bottom: 10px;

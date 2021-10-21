@@ -1,13 +1,9 @@
 .nav {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  @include centeredflex(flex, flex-start, center);
 }
 
 .nav-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredflex();
 }
 
 .nav-list__item:not(:last-child) {

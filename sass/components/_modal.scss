@@ -28,9 +28,7 @@
   top: 8px;
   right: 8px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredflex();
   width: 30px;
   height: 30px;
 

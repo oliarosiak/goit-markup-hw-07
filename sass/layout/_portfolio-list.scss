@@ -30,9 +30,7 @@
 
 .portfolio-list__overlay {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centeredflex();
   top: 0;
   left: 0;
   width: 100%;
@@ -67,9 +65,7 @@
 }
 
 .portfolio-list__overlay-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
+  @include font(400, 18px, 1.56);
   width: 322px;
   color: var(--third-text-color);
 }
@@ -82,9 +78,7 @@
 }
 
 .portfolio-list__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+  @include font(700, 18px, 2);
   letter-spacing: 0.06em;
   color: var(--second-text-color);
   margin-bottom: 2px;
