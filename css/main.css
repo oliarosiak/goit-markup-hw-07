@@ -814,9 +814,7 @@ body {
 
 .portfolio-list__overlay.top {
   transform: translateY(101%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list__link:hover .portfolio-list__overlay.top,
@@ -852,7 +850,7 @@ body {
   color: var(--third-text-color);
 }
 
-.portfolio-list__block {
+.portfolio-list__info {
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
