@@ -1,4 +1,4 @@
-.section_bcg_team {
+.section--bcg-team {
   background-color: var(--secong-background-color);
 }
 
@@ -21,7 +21,7 @@
   padding-bottom: 30px;
 }
 
-.team-list__subtitle {
+.team-list__title {
   @include font(500, 16px, 1.19);
   text-align: center;
   color: var(--second-text-color);

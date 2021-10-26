@@ -15,6 +15,7 @@
   height: 100%;
   @include centeredflex();
   border-radius: 50%;
+  background-color: var(--third-text-color);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
@@ -23,28 +24,21 @@
   }
 }
 
-.social-list__link_bcg_white {
-  background-color: var(--third-text-color);
-}
-
-.social-list__link_bcg_grey {
+.social-list__link--bcg-grey {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .social-list__icon {
   width: 20px;
   height: 20px;
+  fill: var(--third-text-color);
 }
 
-.social-list__icon_color_grey {
+.social-list__icon--fill-grey {
   fill: var(--icons-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .social-list__link:hover &,
   .social-list__link:focus & {
     fill: var(--third-text-color);
   }
-}
-
-.social-list__icon_color_white {
-  fill: var(--third-text-color);
 }

@@ -25,7 +25,7 @@
   }
 }
 
-.nav-list__link_current {
+.nav-list__link--current {
   color: var(--accent-color);
   position: relative;
   &::after {
